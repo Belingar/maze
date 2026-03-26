@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEKERSKI_LABIRINT</title>
+  <link rel="stylesheet" href="maze.css">
+</head>
+<body>
+
+  <div id="layout">
+
+    <div id="sidebar">
+
+      <div class="sidebar-box" id="timer-box">
+        <div class="sidebar-label">ČAS_HEKANJA</div>
+        <span id="time">0:00</span>
+      </div>
+
+      <div class="sidebar-box" id="instructions-box">
+        <p>&gt; MISIJA</p>
+        <p>Skozi labirint se premikaj z <strong>WASD</strong> ali <strong>puščice</strong>.</p>
+        <p>Pridi do <span class="star">★</span> da shekaš sistem</p>
+        <p>Klikni <strong>P</strong> za pavzo.</p>
+      </div>
+
+      <div class="sidebar-box" id="credentials-box">
+        <p>URH BELINGAR</p>
+        <p>RAZRED: 4RA</p>
+        <p>SYS: LABIRINT v1.0</p>
+      </div>
+
+      <button id="pause-btn">⏸ PAVZA</button>
+      <button id="restart-btn">↺ NOVA IGRA</button>
+
+    </div>
+
+    <!-- Game area -->
+    <div id="game-area">
+      <h1>HEKERSKI_LABIRINT</h1>
+      <canvas id="canvas"></canvas>
+    </div>
+
+  </div>
+
+  <div id="popup-overlay">
+    <div id="popup">
+      <div id="popup-emoji">💻</div>
+      <h2>DOSTOP DOVOLJEN</h2>
+      <p>SISTEM SHEKAN <strong id="popup-time"></strong></p>
+      <button id="popup-restart-btn">[ HEKAJ PONOVNO ]</button>
+    </div>
+  </div>
+
+  <script src="maze.js"></script>
+</body>
+</html>
